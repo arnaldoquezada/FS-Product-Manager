@@ -22,18 +22,18 @@ export default () => {
     return(
         <form onSubmit = { onSubmitHandler } >
             <h1>Product Manager</h1>
-            <p>
+            <section>
                 <label>Title</label><br/>
                 <input type="text" onChange = {(e) =>setTitle(e.target.value)}/>
-            </p>
-            <p>
+            </section>
+            <section>
                 <label>Price</label><br/>
                 <input type="text" onChange = {(e) =>setPrice(e.target.value)}/>
-            </p>
-            <p>
+            </section>
+            <section>
                 <label>Description</label><br/>
                 <input type="text" onChange = {(e) =>setDescription(e.target.value)}/>
-            </p>
+            </section>
             <input type="submit" />
         </form>
     )
